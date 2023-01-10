@@ -28,9 +28,16 @@ Luigi.setConfig({
           },
           {
             category: 'Links',
-            label: 'Vue.js',
+            label: 'Luigi Docs',
             externalLink: {
-              url: 'https://vuejs.org/'
+              url: 'https://docs.luigi-project.io/'
+            }
+          },
+          {
+            category: 'Links',
+            label: 'SkillDisplay',
+            externalLink: {
+              url: 'https://skilldisplay.eu/'
             }
           }
         ]
@@ -39,9 +46,10 @@ Luigi.setConfig({
   },
   settings: {
     header: {
-      title: 'Luigi Vue App',
+      title: 'Juice Shop',
       logo: '/logo.png'
     },
-    responsiveNavigation: 'simpleMobileOnly'
+    responsiveNavigation: 'simpleMobileOnly',
+    sideNavFooterText:'KRI v0.0.0',
   }
 });
