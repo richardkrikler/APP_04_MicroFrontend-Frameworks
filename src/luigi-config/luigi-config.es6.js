@@ -1,4 +1,16 @@
 Luigi.setConfig({
+  communication: {
+    customMessagesListeners: {
+      'back.to.core': data => {
+        console.log(data)
+
+        Luigi.customMessages().sendToAll({
+          id: 'to.the.client',
+          data: 'beautiful data for the client'
+        })
+      }
+    }
+  },
   navigation: {
     nodes: () => [
       {
@@ -8,16 +20,17 @@ Luigi.setConfig({
         viewUrl: '/sampleapp.html#/home',
         children: [
           {
-            pathSegment: 'sample1',
-            label: 'First',
-            icon: 'nutrition-activity',
-            viewUrl: '/sampleapp.html#/sample1'
+            pathSegment: 'products',
+            label: 'Products',
+            icon: 'product',
+            // viewUrl: 'http://localhost:5173/'
+            viewUrl: 'http://localhost:8081/'
           },
           {
-            pathSegment: 'sample2',
-            label: 'Second',
-            icon: 'paper-plane',
-            viewUrl: '/sampleapp.html#/sample2'
+            pathSegment: 'about',
+            label: 'About Us',
+            icon: 'hint',
+            viewUrl: '/sampleapp.html#/about'
           },
           {
             category: { label: 'Links', icon: 'cloud' },
@@ -50,6 +63,11 @@ Luigi.setConfig({
       logo: '/logo.png'
     },
     responsiveNavigation: 'simpleMobileOnly',
-    sideNavFooterText:'KRI v0.0.0',
+    sideNavFooterText: 'KRI v0.0.0',
+    appLoadingIndicator: {
+      hideAutomatically: true
+    }
   }
-});
+})
+
+console.log(Luigi)

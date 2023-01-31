@@ -1859,14 +1859,7 @@
   "resolved" "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz"
   "version" "1.1.1"
 
-"array-union@^1.0.1":
-  "integrity" "sha512-Dxr6QJj/RdU/hCaBjOfxW+q6lyuVE6JFWIrAUpuOOhoJJoQ99cUn3igRaHVB5P9WrgFVN0FfArM3x0cueOU8ng=="
-  "resolved" "https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz"
-  "version" "1.0.2"
-  dependencies:
-    "array-uniq" "^1.0.1"
-
-"array-union@^1.0.2":
+"array-union@^1.0.1", "array-union@^1.0.2":
   "integrity" "sha512-Dxr6QJj/RdU/hCaBjOfxW+q6lyuVE6JFWIrAUpuOOhoJJoQ99cUn3igRaHVB5P9WrgFVN0FfArM3x0cueOU8ng=="
   "resolved" "https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz"
   "version" "1.0.2"
@@ -3313,14 +3306,7 @@
     "miller-rabin" "^4.0.0"
     "randombytes" "^2.0.0"
 
-"dir-glob@^2.0.0":
-  "integrity" "sha512-f9LBi5QWzIW3I6e//uxZoLBlUt9kcp66qo0sSCxL6YZKc75R1c4MFCoe/LaZiBGmgujvQdxc5Bn3QhfyvK5Hsw=="
-  "resolved" "https://registry.npmjs.org/dir-glob/-/dir-glob-2.2.2.tgz"
-  "version" "2.2.2"
-  dependencies:
-    "path-type" "^3.0.0"
-
-"dir-glob@^2.2.2":
+"dir-glob@^2.0.0", "dir-glob@^2.2.2":
   "integrity" "sha512-f9LBi5QWzIW3I6e//uxZoLBlUt9kcp66qo0sSCxL6YZKc75R1c4MFCoe/LaZiBGmgujvQdxc5Bn3QhfyvK5Hsw=="
   "resolved" "https://registry.npmjs.org/dir-glob/-/dir-glob-2.2.2.tgz"
   "version" "2.2.2"
